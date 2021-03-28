@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Career Form</title>
+  </head>
+  <body>
+    <h1 id="title">Career Apply Form</h1>
+    <p id="description">Please Fill All The Question With a True Data</p>
+    <div class="boxform">
+      <form id="survey-form">
+        <!-- Name Name Name Name -->
+        <div class="form-group">
+          <label id="name-label" for="name">Name </label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required="" />
+        </div>
+        <!-- Email Email Email Email -->
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com" required="" />
+        </div>
+        <!-- Age Age Age Age Age -->
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input type="number" name="age" id="number" min="20" max="25" class="form-control" placeholder="20 - 25" />
+        </div>
+        <!-- Role Role Role Role -->
+        <div class="form-group">
+          <label id="role-label" for="dropdown">What's your current role?</label>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Job Seeker</option>
+            <option value="learner">Full Time Job</option>
+            <option value="learner">Part Time Job</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <!-- Experience Experience Experience Experience -->
+        <div class="form-group">
+          <label id="expert-label" for="user-recommend">How experienced you are at this job?</label>
+          <label> <input name="user-recommend" value="definitely" type="radio" class="input-radio" />Expert</label>
+          <label> <input name="user-recommend" value="definitely" type="radio" class="input-radio" />Intermediate</label>
+          <label> <input name="user-recommend" value="definitely" type="radio" class="input-radio" />Entry</label>
+        </div>
+        <!-- Work Work Work Work -->
+        <div class="form-group">
+          <label id="work-time" for="prefer">Select the work time that you can <span class="clue">Check all if you can work anytime</span></label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Fulltime (08:00 - 16:00)</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Shift (08:00 - 11:30)</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Shift (13:00 - 16:00)</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Shift (20:00 - 23:00)</label>
+        </div>
+        <!-- Describe Describe Describe Describe -->
+        <div class="form-group">
+          <label id="comment" for="describe">Describe yourself below :</label>
+          <textarea id="describe" class="input-textarea" name="describe" placeholder="Describe yourself here"></textarea>
+        </div>
+        <!-- File File File File-->
+        <div class="form-group">
+          <label id="file" for="upload-file">Upload Requirement File <span class="clue">PDF file only</span></label>
+          <input name="upload-file" class="form-control" type="file" multiple required="" />
+        </div>
+        <!-- Submit Submit Submit Submit -->
+        <div class="form-group">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <p id="thanks">Thanks For Completing This Form</p>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
